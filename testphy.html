@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>PHYSICS TEST</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+   <style>
+    .subjects{
+        color: #fff;
+    }
+    .subjects input{
+        padding: 5px;
+    }
+    .subjects .radio1{
+        padding: 30px;
+        line-height: 30px;
+    }
+   </style>
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+   <a href="#" class="logo"> <i class="fas fa-lightbulb"></i> Learning System </a>
+   <nav class="navbar">
+      <div id="close-navbar" class="fas fa-times"></div>
+      <a href="index.html">home</a>
+      <a href="videos.html">videos</a>
+      <a href="test-yourself.html">Test Yourself</a>
+      <a href="contact.html">contact us</a>
+      
+   </nav>
+   <div class="icons">
+      <div id="account-btn" class="fas fa-user"></div>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </div>
+</header>
+
+
+
+
+
+
+<!-- account form section starts  -->
+
+<div class="account-form">
+   <div id="close-form" class="fas fa-times"></div>
+   <div class="buttons">
+      <span class="btn active login-btn">login</span>
+      <span class="btn register-btn">register</span>
+   </div>
+   <form class="login-form active" action="">
+      <h3>login now</h3>
+      <input type="email" placeholder="enter your email" class="box">
+      <input type="password" placeholder="enter your password" class="box">
+      <div class="flex">
+         <input type="checkbox" name="" id="remember-me">
+         <label for="remember-me">remember me</label>
+         <a href="#">forgot password?</a>
+      </div>
+      <input type="submit" value="login now" class="btn">
+   </form>
+   <form class="register-form" action="">
+      <h3>register now</h3>
+      <input type="email" placeholder="enter your email" class="box">
+      <input type="password" placeholder="enter your password" class="box">
+      <input type="password" placeholder="confirm your password" class="box">
+      <input type="submit" value="register now" class="btn">
+   </form>
+</div>
+
+<!-- account form section ends -->
+
+
+
+
+<!-- header section ends -->
+
+<section class="heading-link">
+   <h3>PHYSICS TEST</h3>
+   <p> <a href="index.html">home</a> / TEST YOURSELF</p>
+</section>
+
+<!-- about section starts  -->
+
+<!-- about section ends -->
+<section class="subjects">
+    <div class="radio1">
+    Q1. Radiocarbon is produced in the atmosphere as a result of<br>
+    <input type="radio" name="question1" id="correct1">collision between fast neutrons and nitrogen nuclei present in the atmosphere<br>
+    <input type="radio" name="question1">action of ultraviolet light from the sun on atmospheric oxygen<br>
+    <input type="radio" name="question1">action of solar radiations particularly cosmic rays on carbon dioxide present in the atmosphere<br>
+    <input type="radio" name="question1">lightning discharge in atmosphere<br>
+    
+    Q2. It is easier to roll a stone up a sloping road than to lift it vertical upwards because <br>
+    <input type="radio" name="question2" >work done in rolling is more than in lifting<br>
+    <input type="radio" name="question2"> work done in lifting the stone is equal to rolling it <br>
+    <input type="radio" name="question2" id="correct2"> work done in rolling a stone is less than in lifting it <br>
+    <input type="radio" name="question2"> work done in both is same but the rate of doing work is less in rolling <br>
+    
+    Q3. The absorption of ink by blotting paper involves<br>
+    <input type="radio" name="question3" >viscosity of ink <br>
+    <input type="radio" name="question3"id="correct3">capillary action phenomenon <br>
+    <input type="radio" name="question3">diffusion of ink through the blotting<br>
+    <input type="radio" name="question3">siphon action<br>
+    
+    <input type="submit" name="submit" value="SubmitQuiz" onClick="result()">
+    </div>
+</section>
+
+
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer1">
+
+   <div class="box-container">
+
+      <div class="box">
+         <h3> <i class="fas fa-lightbulb"></i> Learning System </h3>
+         <p>-------------------------------</p>
+         <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+         </div>
+      </div>
+
+      <div class="box">
+         <h3>quick links</h3>
+         <a href="index.html" class="link">Home</a>
+         <a href="about.html" class="link">About Us</a>
+         <a href="contact.html" class="link">Contact</a>
+      </div>
+
+      <div class="box">
+         <h3>useful links</h3>
+         <a href="#" class="link">send feedback</a>
+         <a href="#" class="link">private policy</a>
+      </div>
+   </div>
+
+   <div class="credit"> created by <span>TEAM08</span> | all rights reserved! </div>
+
+</section>
+
+
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script>
+function result()
+    {
+        var score=0;
+        if(document.getElementById('correct1').checked)
+            {	score++;
+            }
+        if(document.getElementById('correct2').checked)
+            {	score++;
+            }
+        if(document.getElementById('correct3').checked)
+            {	score++;
+            }
+     alert("Your score is:"+score);
+     // to print on browser
+     // document.write("Your score is:"+score);
+    }</script>
+
+</body>
+</html>

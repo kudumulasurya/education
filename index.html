@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
+</head>
+
+<body>
+
+<header class="header">
+   <div class="menu-btn1">
+      <i class="fas fa-bars"></i>
+    </div>
+   
+   
+    <div class="side-bar">
+   
+      <header>
+   
+   
+   
+      <div class="close-btn">
+   
+        <i class="fas fa-times"></i>
+      </div>
+         </header>
+      <div class="menu">
+        <div class="item"><a href="#"><i class="fas fa-desktop"></i>Home</a></div>
+        <div class="item">
+          <a class="sub-btn"><i class="fas fa-table"></i>HTML<i class="fas fa-angle-right dropdown"></i></a>
+          <div class="sub-menu">
+            <a href="htmlnotes.html" class="sub-item">Notes</a>
+            <a href="htmlvid.html" class="sub-item">Videos</a>
+          </div>
+        </div>
+        <div class="item">
+         <a class="sub-btn"><i class="fas fa-cogs"></i>Mathemetics<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="mathnotes.html" class="sub-item">Notes</a>
+           <a href="mathvid.html" class="sub-item">Videos</a>
+         </div>
+       </div>
+        <div class="item"><a href="about.html"><i class="fas fa-info-circle"></i>About Us</a></div>
+      </div>
+    </div>
+   <a href="#" class="logo"> <i class="fas fa-lightbulb"></i> Learning System </a>
+   <nav class="navbar">
+      <div id="close-navbar" class="fas fa-times"></div>
+      <a href="index.html">home</a>
+      <a href="videos.html">videos</a>
+      <a href="Tutors.html">Tutors</a>
+      <a href="test-yourself.html">Test Yourself</a>
+      <a href="contact.html">contact us</a>
+      
+   </nav>
+   <div class="icons">
+      <div id="account-btn" class="fas fa-user"></div>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </div>
+</header>
+
+
+
+
+
+
+<!-- account form section starts  -->
+
+<div class="account-form">
+   <div id="close-form" class="fas fa-times"></div>
+   <div class="buttons">
+      <span class="btn active login-btn">login</span>
+      <span class="btn register-btn">register</span>
+   </div>
+   <form class="login-form active" action="">
+      <h3>login now</h3>
+      <input type="email" placeholder="enter your email" class="box">
+      <input type="password" placeholder="enter your password" class="box">
+      <div class="flex">
+         <input type="checkbox" name="" id="remember-me">
+         <label for="remember-me">remember me</label>
+         <a href="#">forgot password?</a>
+      </div>
+      <input type="submit" value="login now" class="btn">
+   </form>
+   <form class="register-form" action="">
+      <h3>register now</h3>
+      <input type="email" placeholder="enter your email" class="box">
+      <input type="password" placeholder="enter your password" class="box">
+      <input type="password" placeholder="confirm your password" class="box">
+      <input type="submit" value="register now" class="btn">
+   </form>
+</div>
+
+
+
+
+<!-- account form section ends -->
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home">
+   <div class="swiper home-slider">
+      <div class="swiper-wrapper">
+         <section class="swiper-slide slide" style="background: url(pexels-olia-danilevich-5088008.jpg) no-repeat;">
+            <div class="content">
+               <h3>The Futher Is here !</h3>
+               <p>Learning System</p>
+            </div>
+         </section>
+      </div>
+   </div>
+</section>
+
+<!-- home section ends -->
+
+<!-- subjects section starts  -->
+
+
+
+
+
+<section class="subjects">
+   <h1 class="heading">select the subject</h1>
+   <div class="box-container">
+      <div class="box">
+         <a href="htmlvid.html">
+         <img src="subject-icon-1.png" alt=""></a>
+         <h3>HTML</h3>
+         <p>4 Videos</p>
+      </div>
+      <div class="box">
+         <a href="mathvid.html">
+         <img src="subject-icon-2.png" alt=""></a>
+         <h3>mathemetics</h3>
+         <p>3 Video</p>
+      </div>
+      <div class="box">
+         <a href="phyvid.html">
+         <img src="subject-icon-3.png" alt=""></a>
+         <h3>Physics</h3>
+         <p>2 Video</p>
+      </div>
+      <div class="box">
+         <a href="hisvid.html">
+         <img src="subject-icon-4.png" alt=""></a>
+         <h3>History</h3>
+         <p>1 Video</p>
+      </div>
+      <div class="box">
+         <a href="chevid.html">
+         <img src="subject-icon-5.png" alt=""></a>
+         <h3>Chemistry</h3>
+         <p>2 Videos</p>
+      </div>
+   </div>
+
+</section>
+
+<!-- subjects section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <h3> <i class="fas fa-lightbulb"></i> Learning System </h3>
+         <p>-------------------------------</p>
+         <div class="share">
+            <a href="https://www.facebook.com" class="fab fa-facebook-f"></a>
+            <a href="https://twitter.com" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+            <a href="https://www.linkedin.com/in" class="fab fa-linkedin"></a>
+         </div>
+      </div>
+
+      <div class="box">
+         <h3>quick links</h3>
+         <a href="index.html" class="link">Home</a>
+         <a href="about.html" class="link">About Us</a>
+         <a href="contact.html" class="link">Contact</a>
+      </div>
+
+      <div class="box">
+         <h3>useful links</h3>
+         <a href="#" class="link">send feedback</a>
+         <a href="#" class="link">private policy</a>
+      </div>
+   </div>
+
+   <div class="credit"> created by <span>TEAM 12</span> | all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+</body>
+</html>

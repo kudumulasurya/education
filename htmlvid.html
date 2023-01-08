@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <header class="header">
+            <a href="#" class="logo"> <i class="fas fa-lightbulb"></i> Learning System </a>
+            <nav class="navbar">
+               <div id="close-navbar" class="fas fa-times"></div>
+               <a href="index.html">home</a>
+               <a href="videos.html">videos</a>
+               <a href="test-yourself.html">Test Yourself</a>
+               <a href="contact.html">contact us</a>
+               
+            </nav>
+            <div class="icons">
+               <div id="account-btn" class="fas fa-user"></div>
+               <div id="menu-btn" class="fas fa-bars"></div>
+            </div>
+         </header>
+         
+         
+         
+         
+         
+         
+         <!-- account form section starts  -->
+         
+         <div class="account-form">
+            <div id="close-form" class="fas fa-times"></div>
+            <div class="buttons">
+               <span class="btn active login-btn">login</span>
+               <span class="btn register-btn">register</span>
+            </div>
+            <form class="login-form active" action="">
+               <h3>login now</h3>
+               <input type="email" placeholder="enter your email" class="box">
+               <input type="password" placeholder="enter your password" class="box">
+               <div class="flex">
+                  <input type="checkbox" name="" id="remember-me">
+                  <label for="remember-me">remember me</label>
+                  <a href="#">forgot password?</a>
+               </div>
+               <input type="submit" value="login now" class="btn">
+            </form>
+            <form class="register-form" action="">
+               <h3>register now</h3>
+               <input type="email" placeholder="enter your email" class="box">
+               <input type="password" placeholder="enter your password" class="box">
+               <input type="password" placeholder="confirm your password" class="box">
+               <input type="submit" value="register now" class="btn">
+            </form>
+         </div>
+         
+        <h3 class="heading">
+            HTML VIDEOS
+        </h3>
+        <div class="container7">
+            <div class="main-video">
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/IA8JWGP13dI"></iframe>
+                    <h3 class="title">Basic Structure Of A Website</h3>
+                </div>
+            </div>
+            <div class="video-list">
+                <div class="vid active">
+                    <iframe src="https://www.youtube.com/embed/IA8JWGP13dI"></iframe>
+                    <h3 class="title">Basic Structure Of A Website</h3>
+                </div>
+                <div class="vid">
+                    <iframe src="https://www.youtube.com/embed/N69xumSjg5Q"></iframe>
+                    <h3 class="title">List And Tables</h3>
+                </div>
+                <div class="vid">
+                    <iframe src="https://www.youtube.com/embed/KqJikDzb3l4"></iframe>
+                    <h3 class="title">Forms And Input Tags</h3>
+                </div>
+                <div class="vid">
+                    <iframe src="https://www.youtube.com/embed/ua24185-rcw"></iframe>
+                    <h3 class="title">Introduction To CSS</h3>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script>
+            let listVideo=document.querySelectorAll('.video-list .vid');
+            let mainVideo=document.querySelector('.main-video iframe')
+            let title=document.querySelector('.main-video .title')
+            listVideo.forEach(iframe =>{
+                iframe.onclick = () =>{
+                        listVideo.forEach(vid => vid.classList.remove('active'));
+                        iframe.classList.add('active')
+                        if(iframe.classList.contains('active')){
+                            let src = iframe.children[0].getAttribute('src');
+                            mainVideo.src = src;
+                            let text = iframe.children[1].innerHTML;
+                            title.innerHTML = text;
+                        };
+                };
+            });
+        </script>
+    </body>
+</html>
